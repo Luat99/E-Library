@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Y91aMOjzcDcL5orfj0SoOCTI+PLVCGD5fkl+h6Jt1aeUQ7P9L6IS+kpBzZVBS7xkynYFp/FXs5li21apcOq5/Q==",
+  "dgSpecHash": "3c0AHFAP/Hc1y8ZB4p6vAT09LHv4YqCTFiv2EKr0OVVAek1x6sHvkksbvE07gpS682SJNsHQn/689Ai/6+9ckw==",
   "success": true,
   "projectFilePath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.0\\swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
+    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.0\\swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
+    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.0\\swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
+    "C:\\Users\\luatv\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.0\\swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512"
   ],
   "logs": []
 }
