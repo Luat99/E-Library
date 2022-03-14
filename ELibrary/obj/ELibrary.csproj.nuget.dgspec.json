@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\thực tập\\ELibrary\\ELibrary\\ELibrary.csproj": {}
+    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {}
   },
   "projects": {
-    "D:\\thực tập\\ELibrary\\ELibrary\\ELibrary.csproj": {
+    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\thực tập\\ELibrary\\ELibrary\\ELibrary.csproj",
+        "projectUniqueName": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
         "projectName": "ELibrary",
-        "projectPath": "D:\\thực tập\\ELibrary\\ELibrary\\ELibrary.csproj",
+        "projectPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
         "packagesPath": "C:\\Users\\luatv\\.nuget\\packages\\",
-        "outputPath": "D:\\thực tập\\ELibrary\\ELibrary\\obj\\",
+        "outputPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luatv\\AppData\\Roaming\\NuGet\\NuGet.Config",

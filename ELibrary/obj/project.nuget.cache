@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4CJ0Tc8DkzF8DkRd2k4X90MOhWy25Js8PFsJtlU0XeVb0oDhfz3NspRtahzSybDBuriraHgwkw1PC6F+dP4RmQ==",
+  "dgSpecHash": "Y91aMOjzcDcL5orfj0SoOCTI+PLVCGD5fkl+h6Jt1aeUQ7P9L6IS+kpBzZVBS7xkynYFp/FXs5li21apcOq5/Q==",
   "success": true,
-  "projectFilePath": "D:\\thực tập\\ELibrary\\ELibrary\\ELibrary.csproj",
+  "projectFilePath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
