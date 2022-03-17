@@ -52,3 +52,16 @@ C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\obj\Debug\net6.0\refint\ELibr
 C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\obj\Debug\net6.0\ELibrary.pdb
 C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\obj\Debug\net6.0\ELibrary.genruntimeconfig.cache
 C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\obj\Debug\net6.0\ref\ELibrary.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Humanizer.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\runtimes\win7-x64\native\sni.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\runtimes\win7-x86\native\sni.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\runtimes\unix\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\Users\luatv\Documents\GitHub\E-Library\ELibrary\bin\Debug\net6.0\runtimes\win\lib\netstandard1.3\System.Data.SqlClient.dll
