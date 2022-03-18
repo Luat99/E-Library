@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hbMN5loXo3BIrItzNXS09UQcV6DG6DqbejQgok+TWvopgoyq6s+cN/Uk+GQuc9zU/xGftCrtiWOdVX/z5dSODA==",
+  "dgSpecHash": "QMLYd4PiSG5G29qjuCidIsHMnPkHlEp9VEJGo2KlcG2juKC6UUm1lDBC7o9r+SgTsP8AXUb2o4/V403bpfnb2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.6\\microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver.design\\1.1.6\\microsoft.entityframeworkcore.sqlserver.design.1.1.6.nupkg.sha512",
+    "C:\\Users\\luatv\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\luatv\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
