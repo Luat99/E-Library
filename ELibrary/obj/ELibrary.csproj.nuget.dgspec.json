@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {}
+    "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {
+    "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
+        "projectUniqueName": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj",
         "projectName": "ELibrary",
-        "projectPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
+        "projectPath": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj",
         "packagesPath": "C:\\Users\\luatv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\obj\\",
+        "outputPath": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luatv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -54,19 +58,9 @@
               "target": "Package",
               "version": "[6.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
-              "target": "Package",
-              "version": "[1.1.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.3, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

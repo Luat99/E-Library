@@ -21,53 +21,95 @@ namespace ELibrary.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ELibrary.Models.admin.admin", b =>
+            modelBuilder.Entity("ELibrary.Models.Admin", b =>
                 {
-                    b.Property<int>("id_admin")
+                    b.Property<int>("ID_Admin")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_admin"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_Admin"), 1L, 1);
 
-                    b.Property<string>("name_admin")
+                    b.Property<string>("NAME_Admin")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_admin");
+                    b.HasKey("ID_Admin");
 
-                    b.ToTable("admin");
+                    b.ToTable("Admin");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.baigiang", b =>
+            modelBuilder.Entity("ELibrary.Models.BaiGiang", b =>
                 {
-                    b.Property<int>("id_bg")
+                    b.Property<int>("ID_BaiGiang")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_bg"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_BaiGiang"), 1L, 1);
 
-                    b.Property<string>("description_bg")
+                    b.Property<string>("DESCRIPTION_BaiGiang")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_bg")
+                    b.Property<string>("NAME_BaiGiang")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_bg");
+                    b.HasKey("ID_BaiGiang");
 
-                    b.ToTable("baigiang");
+                    b.ToTable("BaiGiang");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.data_file", b =>
+            modelBuilder.Entity("ELibrary.Models.DanhSachMonGiangDay", b =>
                 {
-                    b.Property<int>("id_file")
+                    b.Property<int>("ID_DSMGiangDay")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_file"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_DSMGiangDay"), 1L, 1);
 
-                    b.Property<string>("Extension_file")
+                    b.Property<string>("DESCRIPTION_DSMGiangDay")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NAME_DSMGiangDay")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID_DSMGiangDay");
+
+                    b.ToTable("DanhSachMonGiangDay");
+                });
+
+            modelBuilder.Entity("ELibrary.Models.DeThiKiemTra", b =>
+                {
+                    b.Property<int>("ID_DeThiKiemTra")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_DeThiKiemTra"), 1L, 1);
+
+                    b.Property<string>("DESCRIPTION_DeThiKiemTra")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NAME_DeThiKiemTra")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID_DeThiKiemTra");
+
+                    b.ToTable("DeThiKiemTra");
+                });
+
+            modelBuilder.Entity("ELibrary.Models.DFile", b =>
+                {
+                    b.Property<int>("ID_File")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_File"), 1L, 1);
+
+                    b.Property<string>("Extension_File")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -79,173 +121,135 @@ namespace ELibrary.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_file")
+                    b.Property<string>("NAME_File")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_file");
+                    b.HasKey("ID_File");
 
-                    b.ToTable("data_file");
+                    b.ToTable("DFile");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.dethikiemtra", b =>
+            modelBuilder.Entity("ELibrary.Models.Help", b =>
                 {
-                    b.Property<int>("id_dtkt")
+                    b.Property<int>("ID_Help")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_dtkt"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_Help"), 1L, 1);
 
-                    b.Property<string>("description_dtks")
+                    b.Property<string>("DESCRIPTION_Help")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_dtkt")
+                    b.Property<string>("NAME_Help")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_dtkt");
+                    b.HasKey("ID_Help");
 
-                    b.ToTable("dethikiemtra");
+                    b.ToTable("Help");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.dsmongiangday", b =>
+            modelBuilder.Entity("ELibrary.Models.NganHangDeThi", b =>
                 {
-                    b.Property<int>("id_dsmgd")
+                    b.Property<int>("ID_NganHangDeThi")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_dsmgd"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_NganHangDeThi"), 1L, 1);
 
-                    b.Property<string>("description_dsmh")
+                    b.Property<string>("DESCRIPTION_NganHangDeThi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_dsmgd")
+                    b.Property<string>("NAME_NganHangDeThi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_dsmgd");
+                    b.HasKey("ID_NganHangDeThi");
 
-                    b.ToTable("dsmongiangday");
+                    b.ToTable("NganHangDeThi");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.help", b =>
+            modelBuilder.Entity("ELibrary.Models.TaiLieuMonHoc", b =>
                 {
-                    b.Property<int>("id_help")
+                    b.Property<int>("ID_TaiLieuMonHoc")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_help"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_TaiLieuMonHoc"), 1L, 1);
 
-                    b.Property<string>("description_help")
+                    b.Property<string>("DESCRIPTION_TaiLieuMonHoc")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_help")
+                    b.Property<string>("NAME_TaiLieuMonHoc")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_help");
+                    b.HasKey("ID_TaiLieuMonHoc");
 
-                    b.ToTable("help");
+                    b.ToTable("TaiLieuMonHoc");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.nganhangdethi", b =>
+            modelBuilder.Entity("ELibrary.Models.TaiNguyen", b =>
                 {
-                    b.Property<int>("id_nhdt")
+                    b.Property<int>("ID_TaiNguyen")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_nhdt"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_TaiNguyen"), 1L, 1);
 
-                    b.Property<string>("description_nhdt")
+                    b.Property<string>("DESCRIPTION_TaiNguyen")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_nhdt")
+                    b.Property<string>("NAME_TaiNguyen")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_nhdt");
+                    b.HasKey("ID_TaiNguyen");
 
-                    b.ToTable("nganhangdethi");
+                    b.ToTable("TaiNguyen");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.tailieumonhoc", b =>
+            modelBuilder.Entity("ELibrary.Models.Teacher", b =>
                 {
-                    b.Property<int>("id_tlmh")
+                    b.Property<int>("ID_Teacher")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_tlmh"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_Teacher"), 1L, 1);
 
-                    b.Property<string>("name_tlmh")
+                    b.Property<string>("NAME_Teacher")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_tlmh");
+                    b.HasKey("ID_Teacher");
 
-                    b.ToTable("tailieumonhoc");
+                    b.ToTable("Teacher");
                 });
 
-            modelBuilder.Entity("ELibrary.Models.feature.tainguyen", b =>
+            modelBuilder.Entity("ELibrary.Models.ThongBao", b =>
                 {
-                    b.Property<int>("id_tn")
+                    b.Property<int>("ID_ThongBao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_tn"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID_ThongBao"), 1L, 1);
 
-                    b.Property<string>("description_tn")
+                    b.Property<string>("DESCRIPTION_ThongBao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("name_tn")
+                    b.Property<string>("NAME_ThongBao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id_tn");
+                    b.HasKey("ID_ThongBao");
 
-                    b.ToTable("tainguyen");
-                });
-
-            modelBuilder.Entity("ELibrary.Models.feature.thongbao", b =>
-                {
-                    b.Property<int>("id_tb")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_tb"), 1L, 1);
-
-                    b.Property<string>("description_tb")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("name_tb")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id_tb");
-
-                    b.ToTable("thongbao");
-                });
-
-            modelBuilder.Entity("ELibrary.Models.teacher.teacher", b =>
-                {
-                    b.Property<int>("id_teacher")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_teacher"), 1L, 1);
-
-                    b.Property<string>("name_teacher")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("id_teacher");
-
-                    b.ToTable("teacher");
+                    b.ToTable("ThongBao");
                 });
 #pragma warning restore 612, 618
         }

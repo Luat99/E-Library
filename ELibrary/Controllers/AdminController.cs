@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ELibrary.Models.admin;
+using ELibrary.Models;
 namespace ELibrary.Controllers
 {
     [Route("api/[controller]")]
@@ -13,46 +13,41 @@ namespace ELibrary.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
-        public async Task<ActionResult<List<admin>>> Getadmin()
+        public async Task<ActionResult<List<Admin>>> GetAdmin()
         {
-            return Ok(await _context.admin.ToListAsync());
+            return Ok(await _context.Admin.ToListAsync());
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<admin>>> AddAdmin(admin admin)
+        public async Task<ActionResult<List<Admin>>> PostThongBao(Admin Admin)
         {
-            _context.admin.Add(admin);
+            _context.Admin.Add(Admin);
             await _context.SaveChangesAsync();
-
-            return Ok(await _context.admin.ToListAsync());
+            return Ok(await _context.Admin.ToListAsync());
         }
 
         [HttpPut]
-        public async Task<ActionResult<List<admin>>> Updateadmin(admin request)
+        public async Task<ActionResult<List<Admin>>> UpdateAdmin(Admin request)
         {
-            var dbAdmin = await _context.admin.FindAsync(request.id_admin);
+            var dbAdmin = await _context.Admin.FindAsync(request.ID_Admin);
             if (dbAdmin == null)
-                return BadRequest("Admin not found.");
-
-            dbAdmin.name_admin = request.name_admin;
-
+                return BadRequest("Không Tồn Tại");
+            dbAdmin.NAME_Admin = request.NAME_Admin;
             await _context.SaveChangesAsync();
-
-            return Ok(await _context.admin.ToListAsync());
+            return Ok(await _context.Admin.ToListAsync());
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<List<admin>>> Deleteadmin(int id)
+        [HttpDelete]
+        public async Task<ActionResult<List<Admin>>> DeleteAdmin(int id)
         {
-            var dbAdmin = await _context.admin.FindAsync(id);
+            var dbAdmin = await _context.Admin.FindAsync(id);
             if (dbAdmin == null)
                 return BadRequest("Admin not found.");
-
-            _context.admin.Remove(dbAdmin);
+            _context.Admin.Remove(dbAdmin);
             await _context.SaveChangesAsync();
-
-            return Ok(await _context.admin.ToListAsync());
+            return Ok(await _context.Admin.ToListAsync());
         }
     }
 }
