@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj": {}
+    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj": {
+    "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj",
+        "projectUniqueName": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
         "projectName": "ELibrary",
-        "projectPath": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\ELibrary.csproj",
+        "projectPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\ELibrary.csproj",
         "packagesPath": "C:\\Users\\luatv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luatv\\Desktop\\ELibrary\\ELibrary\\obj\\",
+        "outputPath": "C:\\Users\\luatv\\Documents\\GitHub\\E-Library\\ELibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luatv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -61,6 +65,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             }
           },
           "imports": [

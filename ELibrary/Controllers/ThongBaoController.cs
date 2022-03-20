@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ELibrary.Models;
+using Microsoft.AspNetCore.Authorization;
+
 namespace ELibrary.Controllers
 {
+    [Authorize(Roles = "Admin,Teacher")]
     [Route("api/[controller]")]
     [ApiController]
     public class ThongBaoController : ControllerBase
@@ -32,7 +35,6 @@ namespace ELibrary.Controllers
                 return BadRequest("Không Tồn Tại");
             dbThongBao.NAME_ThongBao = ThongBao.NAME_ThongBao;
             dbThongBao.DESCRIPTION_ThongBao = ThongBao.DESCRIPTION_ThongBao;
-
             await _context.SaveChangesAsync();
             return Ok(await _context.ThongBao.ToListAsync());
         }
@@ -41,10 +43,9 @@ namespace ELibrary.Controllers
         {
             var dbThongBao = await _context.ThongBao.FindAsync(id);
             if (dbThongBao == null)
-                return BadRequest("Thong bao khong tim thay");
+                return BadRequest("Không tồn tại");
             _context.ThongBao.Remove(dbThongBao);
             await _context.SaveChangesAsync();
-
             return Ok(await _context.ThongBao.ToListAsync());
         }
     }
