@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ELibrary.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace ELibrary.Controllers
 {
-    [Authorize(Roles = "Admin,Teacher")]
     [Route("api/[controller]")]
     [ApiController]
+
     public class BaiGiangController : ControllerBase
     {
         private readonly DataContext _context;

@@ -21,7 +21,7 @@ namespace ELibrary.Controllers
             _configuration = configuration;
         }
 
-        [HttpPost("register"), Authorize(Roles = "Teacher")]
+        [HttpPost("register")]
         public async Task<ActionResult<TeacherRegister>> Register(TeacherDTO request)
         {
             CreatePassHash_Teacher(request.PASS_Teacher, out byte[] PassHash_Teacher, out byte[] PassSalt_Teacher);
