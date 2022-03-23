@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ELibrary.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ELibrary.Models;
+
 
 namespace ELibrary.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "ADMIN,Teacher")]
+
     public class DeThiKiemTraController : ControllerBase
     {
         private readonly DataContext _context;

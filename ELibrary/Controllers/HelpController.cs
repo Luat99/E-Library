@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ELibrary.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ELibrary.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "ADMIN,Teacher")]
+
     public class HelpController : ControllerBase
     {
         private readonly DataContext _context;

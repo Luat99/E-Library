@@ -1,11 +1,15 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ELibrary.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace ELibrary.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "ADMIN,Teacher")]
+
 
     public class BaiGiangController : ControllerBase
     {
@@ -47,7 +51,7 @@ namespace ELibrary.Controllers
             _context.BaiGiang.Remove(dbBaiGiang);
             await _context.SaveChangesAsync();
 
-            return Ok(await _context.DanhSachMonGiangDay.ToListAsync());
+            return Ok(await _context.BaiGiang.ToListAsync());
         }
     }
 }

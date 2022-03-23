@@ -15,13 +15,12 @@ namespace ELibrary.Controllers
     {
         public static TeacherRegister Teacher = new TeacherRegister();
         private readonly IConfiguration _configuration;
-
         public TeacherAuthController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        [HttpPost("register")]
+        [HttpPost("register"), Authorize(Roles = "ADMIN")]
         public async Task<ActionResult<TeacherRegister>> Register(TeacherDTO request)
         {
             CreatePassHash_Teacher(request.PASS_Teacher, out byte[] PassHash_Teacher, out byte[] PassSalt_Teacher);
